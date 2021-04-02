@@ -1,0 +1,52 @@
+@import '../styles/variables.scss';
+
+.header {
+    background-color: $color-yellow;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 18rem;
+
+    @media only screen and (max-width: $bp-large) {
+        padding-right: 10rem;
+   }
+
+   @media only screen and (max-width: $bp-mobile) {
+        padding-right: 0rem;
+    }
+    
+
+    &__logo {
+        height: 10rem;
+        @media only screen and (max-width: $bp-mobile) {
+            height: 8rem;
+        }
+    }
+
+    &__name {
+        font-size: 6rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: 4rem;
+        }
+    }
+
+    &__text {
+        margin-left: 2rem;
+        font-size: 4rem;
+         @media only screen and (max-width: $bp-largest) {
+             font-size: 3rem;
+        }
+        @media only screen and (max-width: $bp-large) {
+            font-size: 2rem;
+       }
+
+       @media only screen and (max-width: $bp-mobile) {
+        font-size: 1rem;
+   }
+
+
+       
+    }
+}

@@ -1,0 +1,64 @@
+@import '../styles/variables.scss';
+
+.landingpage {
+    position: relative;
+    height: 106vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    &__navbar {
+        position: absolute;
+        right: 5rem;
+        top: 14rem;
+
+    }
+
+    &__box {
+        margin-left: 5rem;
+        margin-top: 14rem;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-top: 25rem;
+        }
+    }
+
+    &__header {
+        color: $color-yellow;
+        -webkit-text-stroke: 1rem black;
+        font-size: 16rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: -4rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: 8rem;
+            -webkit-text-stroke: 0.6rem black;
+            margin-bottom: -2rem;
+       }
+    }
+
+    &__line {
+        width: 70vw;
+        height: 3rem;
+        background-color: $color-black;
+        clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+
+        @media only screen and (max-width: $bp-mobile) {
+            height: 1.5rem;
+            width: 80vw;
+        }
+    }
+
+    &__text {
+        font-size: 4rem;
+        font-style: italic;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: 2.5rem;
+        }
+    }
+
+}
