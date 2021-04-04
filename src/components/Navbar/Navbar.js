@@ -53,7 +53,7 @@ const Navbar = () =>{
                         <li className='navbar__item' onClick={() => history.push('/offers')}>Naše služby</li>
                         <li className='navbar__item' onClick={() => history.push('/photos')}>Foto prací</li>
                         <li className='navbar__item' onClick={() => history.push('/pricelist')}>Ceník</li>
-                        <li className='navbar__item' onClick={() => history.push('/contact')}>Kontat</li>
+                        <li className='navbar__item' onClick={() => history.push('/contact')}>Kontakt</li>
                     </ul>
             )
         }

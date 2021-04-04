@@ -7,6 +7,9 @@
     right: 5rem;
     top: 14rem;
     z-index: 1000;
+    @media only screen and (max-width: $bp-mobile-big) {
+        width: 25rem;
+    }
 
     @media only screen and (max-height: $bp-mobile-small) {
         right: 4rem;
@@ -21,6 +24,7 @@
         justify-content: space-between;
         float: right;
         cursor: pointer;
+        transform: rotate(180deg);
 
         &:hover {
             .navbar__line  {
@@ -41,7 +45,7 @@
         &-1 {
             background-color: $color-black;
             height: 0.8rem;
-            width: 5rem;
+            width: 6.5rem;
         }
 
         &-2 {
@@ -53,21 +57,18 @@
         &-3 {
             background-color: $color-black;
             height: 0.8rem;
-            width: 6.5rem;
+            width: 5rem;
         }
         
     }
 
     &__list {
-        padding: 1rem;
         list-style: none;
-        background-color: rgba($color-white, 0.8);
-        border-radius: 2rem;
+        padding: 1rem;
 
         @media only screen and (max-width: $bp-mobile-big) {
-            padding: 0;
             margin-top: -1rem;
-            width: 22rem;
+            width: 25rem;
             text-align: center;
         }
 
@@ -79,20 +80,22 @@
     }
 
     &__item {
-        background-color: rgba($color-white, 0.8);
         font-size: 2.5rem;
         font-weight: 500;
         text-transform: uppercase;
         cursor: pointer;
 
-        background: linear-gradient(to right, rgba($color-red, 0.6) 50%,rgba($color-white, 0.1) 50%);
+        background: linear-gradient(to right, rgba($color-red, 0.8) 50%, rgba($color-yellow, 0.1) 50%);
         background-size: 200% 100%;
         background-position: right bottom;
         transition: all .5s ease-out;
 
+
         @media only screen and (max-width: $bp-mobile-big) {
             font-size: 3.2rem;
-            
+            padding-top: .4rem;
+            padding-bottom: .4rem;
+            background: none;
             transition: none;
         }
 
@@ -115,15 +118,16 @@
 
             @media only screen and (max-width: $bp-mobile-big) {
                 background-position: center;
-                background-color: $color-red;
             }
         }
     }
 
     &__content {
+        background-color: rgba($color-yellow, 0.8);
         font-size: 2rem;
         font-weight: 400;
         margin-top: 8rem;
         text-align: center;
+        border-radius: 2rem;
     }
 }
