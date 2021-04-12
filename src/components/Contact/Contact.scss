@@ -1,0 +1,132 @@
+@import '../styles/variables.scss';
+
+.contact {
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+
+    @media only screen and (max-width: $bp-medium) {
+        height: 120vh;
+    }
+
+    @media only screen and (max-width: $bp-mobile-big) {
+        height: 100vh;
+    }
+
+    @media only screen and (max-height: $bp-small) {
+        height: 100vh;
+    }
+
+    &__content {
+        height: 71vh;
+        text-align: center;
+        margin-top: 12rem;
+    }
+
+    &__header {
+        font-size: 6rem;
+        text-transform: uppercase;
+        margin: 6rem;
+        white-space: nowrap;
+
+        @media only screen and (max-width: $bp-medium-large) {
+            font-size: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 3.5rem;
+            margin: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile-big) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile-mini) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-height: $bp-mobile-big) {
+            margin-top: -4rem;
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-height: $bp-mobile-small) {
+            margin-top: -8rem;
+        }
+    }
+
+    &__box {
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            height: 100%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            height: 110%;
+        }
+
+        @media only screen and (max-width: $bp-mobile-big) {
+            height: 90%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
+
+        @media only screen and (max-height: $bp-mobile-big) {
+            flex-direction: row;
+            height: 60%;
+        }
+    }
+
+    &__icon {
+        @media only screen and (max-width: $bp-large) {
+            height: 18rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-large) {
+            height: 14rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            height: 13rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile-big) {
+            height: 12rem;
+        }
+
+        @media only screen and (max-height: $bp-mobile-big) {
+            height: 8rem;
+        }
+    }
+
+    &__info {
+        height: 40rem;
+        width: 45rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            height: 20rem;
+        }
+    }
+
+    &__address {
+        font-size: 2.2rem;
+        margin-top: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-top: 1rem;
+        }
+
+        @media only screen and (max-height: $bp-mobile-big) {
+            font-size: 1.6rem;
+            width: 25rem;
+            word-wrap: break-word;
+        }
+    }
+}

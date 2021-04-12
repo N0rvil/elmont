@@ -7,8 +7,19 @@
     right: 5rem;
     top: 14rem;
     z-index: 1000;
+
+    
+
     @media only screen and (max-width: $bp-mobile-big) {
         width: 25rem;
+    }
+
+    @media only screen and (max-height: $bp-mobile-big) {
+        top: 10rem;
+    }
+
+    @media only screen and (max-height: $bp-small) {
+        width: 35rem;        
     }
 
     @media only screen and (max-height: $bp-mobile-small) {
@@ -25,6 +36,8 @@
         float: right;
         cursor: pointer;
         transform: rotate(180deg);
+
+        
 
         &:hover {
             .navbar__line  {
@@ -129,5 +142,10 @@
         margin-top: 8rem;
         text-align: center;
         border-radius: 2rem;
+
+        @media only screen and (max-height: $bp-small) {
+            margin-top: 0;        
+            margin-right: 10rem;
+        }
     }
 }

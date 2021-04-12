@@ -11,10 +11,6 @@ import Contact from './Contact/Contact';
 
 import './App.scss';
 
-
-
-
-
 const App = () =>{
     return (
         <div className='app'>  

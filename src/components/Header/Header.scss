@@ -2,15 +2,24 @@
 
 .header {
     background-color: $color-yellow;
-    height: 10rem;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 18rem;
 
+    @media only screen and (max-width: $bp-largest) {
+        padding-right: 14rem;
+        justify-content: start;
+   }
+
     @media only screen and (max-width: $bp-large) {
         padding-right: 10rem;
    }
+
+   @media only screen and (max-width: $bp-medium) {
+    padding-right: 1rem;
+    }
 
    @media only screen and (max-width: $bp-mobile-big) {
         padding-right: 0rem;
@@ -26,16 +35,33 @@
 
     &__logo {
         height: 10rem;
+        @media only screen and (max-width: $bp-medium) {
+            height: 9rem;
+        }
+
         @media only screen and (max-width: $bp-mobile-big) {
             height: 8rem;
+        }
+
+        @media only screen and (max-height: $bp-medium) {
+            height: 5.5rem;
         }
     }
 
     &__name {
-        font-size: 6rem;
+        white-space: nowrap;
+        font-size: 5rem;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 3.5rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 3rem;
+        }
 
         @media only screen and (max-width: $bp-mobile-big) {
-            font-size: 4rem;
+            font-size: 2.5rem;
         }
     }
 
@@ -47,6 +73,10 @@
         }
         @media only screen and (max-width: $bp-large) {
             font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.8rem;
         }
 
         @media only screen and (max-width: $bp-mobile-big) {

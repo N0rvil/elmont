@@ -12,7 +12,7 @@ const LandingPage = () =>{
             <Header />
             <Navbar />       
                 <div className='landingpage__box'>
-                    <h1 className='landingpage__header'>elmont</h1>
+                    <h1 className='landingpage__header'>ren-dek</h1>
                     <div className='landingpage__line'></div>
                     <h3 className='landingpage__text'>kvalitní elektroinstalace</h3>
                 </div> 

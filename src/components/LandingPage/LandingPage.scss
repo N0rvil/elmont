@@ -22,13 +22,27 @@
             margin-top: 25rem;
         }
 
+        @media only screen and (max-width: $bp-small) {
+            margin-top: 30rem;
+        }
+
         @media only screen and (max-width: $bp-mobile-big) {
-            margin-left: 3rem;
+            margin-left: 1rem;
        }
+
+
+
+
+       @media only screen and (max-height: $bp-medium) {
+            margin-top: 25rem;
+        }
+
+        @media only screen and (max-height: $bp-small) {
+            margin-top: 12rem;
+        }
 
         @media only screen and (max-height: $bp-mobile-big) {
             margin-left: 5rem;
-            margin-top: 12rem;
         }
 
         @media only screen and (max-height: $bp-mobile-small) {
@@ -45,6 +59,17 @@
         font-weight: 800;
         text-transform: uppercase;
         margin-bottom: -4rem;
+        white-space: nowrap;
+
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 12rem;
+            margin-bottom: -2rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: 10rem;
+            -webkit-text-stroke: 0.6rem black;
+        }
 
         @media only screen and (max-width: $bp-mobile-big) {
             font-size: 11rem;
@@ -52,16 +77,25 @@
             margin-bottom: -3rem;
        }
         @media only screen and (max-width: $bp-mobile-small) {
-            font-size: 9rem;
+            font-size: 7rem;
             -webkit-text-stroke: 0.6rem black;
             margin-bottom: -2rem;
-         }
+        }
+
+
+        
+        
 
          //height
 
+         @media only screen and (max-height: $bp-medium) {
+            font-size: 9rem;
+            -webkit-text-stroke: 0.5rem black;
+        }
+
          @media only screen and (max-height: $bp-mobile-big) {
             -webkit-text-stroke: 0.5rem black;
-            font-size: 9rem;
+            font-size: 8rem;
             margin-bottom: -3rem;
         }
 
@@ -77,9 +111,19 @@
         background-color: $color-black;
         clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
 
+        @media only screen and (max-width: $bp-medium) {
+            width: 80vw;
+            height: 2rem;
+        }
+
         @media only screen and (max-width: $bp-mobile-big) {
             height: 2rem;
             width: 90vw;
+        }
+
+        @media only screen and (max-height: $bp-small) {
+            width: 80vw;
+            height: 2rem;
         }
 
         @media only screen and (max-height: $bp-mobile-big) {
@@ -96,6 +140,14 @@
         font-style: italic;
         font-weight: 400;
         text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 3.5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3.2rem;
+        }
 
         @media only screen and (max-width: $bp-mobile-big) {
             font-size: 3rem;
