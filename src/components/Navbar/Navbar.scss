@@ -15,7 +15,7 @@
     }
 
     @media only screen and (max-height: $bp-mobile-big) {
-        top: 10rem;
+        top: 12;
     }
 
     @media only screen and (max-height: $bp-small) {
@@ -89,6 +89,8 @@
             position: absolute;
             top: 0;
             right: 10rem;
+            width: 20rem;
+            background-color: rgba($color-yellow, 0.8);
         }
     }
 
@@ -119,7 +121,7 @@
 
         @media only screen and (max-height: $bp-mobile-small) {
             font-size: 1.4rem;
-            width: 10rem;
+            width: 100%;
         }
 
 
@@ -146,6 +148,10 @@
         @media only screen and (max-height: $bp-small) {
             margin-top: 0;        
             margin-right: 10rem;
+        }
+
+        @media only screen and (max-height: $bp-mobile-small) {
+            border-radius: 2rem;
         }
     }
 }
