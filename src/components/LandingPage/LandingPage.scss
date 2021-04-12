@@ -1,11 +1,11 @@
 @import '../styles/variables.scss';
 
 .landingpage {
-    position: relative;
     height: 106vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+
 
     &__navbar {
         position: absolute;
@@ -17,6 +17,7 @@
     &__box {
         margin-left: 5rem;
         margin-top: 14rem;
+        height: 80vh;
 
         @media only screen and (max-width: $bp-large) {
             margin-top: 25rem;
@@ -165,5 +166,7 @@
             font-size: 2rem;
         }
     }
+
+    
 
 }

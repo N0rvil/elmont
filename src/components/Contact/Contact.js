@@ -16,7 +16,7 @@ const Contact = () =>{
                 <div className='contact__box'>
                     <div className='contact__info'>
                         <img className='contact__icon' src='./images/phone-icon.png' alt='phone-icon' />
-                        <h2 className='contact__address'>+420 738 549 624</h2>
+                        <h2 className='contact__address'>+420 737 596 009</h2>
                     </div>
                     <div className='contact__info'>
                         <img className='contact__icon' src='./images/email-icon.png' alt='phone-icon' />
@@ -27,6 +27,7 @@ const Contact = () =>{
                         <h2 className='contact__address'>https://www.facebook.com/ren-dek</h2>
                     </div>
                 </div>
+                
             </div>
             <Footer />
         </div>
