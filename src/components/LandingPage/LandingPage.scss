@@ -1,56 +1,24 @@
 @import '../styles/variables.scss';
 
 .landingpage {
-    height: 106vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    height: 100vh;
+    
 
-
-    &__navbar {
-        position: absolute;
-        right: 5rem;
-        top: 14rem;
-
-    }
-
-    &__box {
-        margin-left: 5rem;
-        margin-top: 14rem;
-        height: 80vh;
-
-        @media only screen and (max-width: $bp-large) {
-            margin-top: 25rem;
-        }
-
-        @media only screen and (max-width: $bp-small) {
-            margin-top: 30rem;
-        }
-
-        @media only screen and (max-width: $bp-mobile-big) {
-            margin-left: 1rem;
-       }
-
-
-
-
-       @media only screen and (max-height: $bp-medium) {
-            margin-top: 25rem;
-        }
-
-        @media only screen and (max-height: $bp-small) {
-            margin-top: 12rem;
-        }
+    &__content {
+        height: 90%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        padding-top: 15rem;
+        padding-left: 5rem;
 
         @media only screen and (max-height: $bp-mobile-big) {
-            margin-left: 5rem;
+            padding-top: 5rem;
         }
 
         @media only screen and (max-height: $bp-mobile-small) {
-            margin-top: 2.5rem;
-        }
-
-        
+            padding-top: 2.5rem;
+        } 
     }
 
     &__header {

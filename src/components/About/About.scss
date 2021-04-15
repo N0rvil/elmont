@@ -50,7 +50,7 @@
 
         @media only screen and (max-width: $bp-medium) {
             font-size: 2rem;
-            margin-top: -1rem;
+            margin-top: 0rem;
         }
         
     }
@@ -101,15 +101,19 @@
             }
 
             @media only screen and (max-height: $bp-medium) {
-                height: 20rem;
+                height: 28rem;
             }
 
             @media only screen and (max-height: $bp-small) {
+                height: 22rem;
+            }
+
+            @media only screen and (max-height: $bp-mobile-big) {
                 height: 16rem;
             }
 
             @media only screen and (max-height: $bp-mobile-small) {
-                height: 12rem;
+                height: 14rem;
             }
         }
 
